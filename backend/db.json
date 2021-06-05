@@ -1,0 +1,67 @@
+{
+  "produto": [
+    {
+      "id": 1,
+      "nome": "Xuxa",
+      "codigoItem": 3256,
+      "categoria": "Jogo",
+      "preco": 500,
+      "dataCadastro": null
+    },
+    {
+      "id": 1,
+      "nome": "Xuxando",
+      "codigoItem": 3246,
+      "categoria": "Video game",
+      "preco": 2500,
+      "dataCadastro": null
+    },
+    {
+      "nome": "xuxa",
+      "categoria": "jogo",
+      "dataCadastro": "2021-06-04T23:45:37.429Z",
+      "codigoItem": "0.28814059645742907",
+      "id": 2
+    },
+    {
+      "nome": "Dell",
+      "categoria": "Notebook",
+      "preco": "2000.00",
+      "dataCadastro": "2021-06-05T00:56:57.785Z",
+      "codigoItem": "0.4918125228968413",
+      "id": 3
+    },
+    {
+      "nome": "Iphone",
+      "categoria": "Telefone",
+      "preco": "2000",
+      "dataCadastro": "2021-06-05T14:12:15.262Z",
+      "codigoItem": "0.7374668376341122",
+      "id": 5
+    }
+  ],
+  "usuario": [
+    {
+      "id": 1,
+      "nomeCompleto": "Ano Emangi",
+      "rg": "3256",
+      "cpf": "23907301838",
+      "telefone": "11977228269",
+      "senha": "xuxandomuito",
+      "email": "xuxa@gmail.com",
+      "endereco": "rua cores vivas 15",
+      "admin": true
+    },
+    {
+      "id": 2,
+      "nomeCompleto": "Jeremi Emangi",
+      "rg": "3256",
+      "cpf": "23907301839",
+      "telefone": "11977228269",
+      "senha": "xuxandomuito",
+      "email": "xuxa@gmail.com",
+      "endereco": "rua cores vivas 15",
+      "admin": false
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+.title{
+    display: flex;
+    padding-left: 22%;
+    padding-top: 10px;
+}
+
+.registro-content{
+    margin-top: 10px;
+    width: 55%;
+    right:-20%;
+    padding-top: 1px;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 22px;
+    padding-bottom: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#button{
+    margin-left: 79%;
+    margin-right: 20px;
+}

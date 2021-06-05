@@ -1,0 +1,72 @@
+<mat-card>
+    <mat-card-title class="title">
+        Processando a venda <i>...</i>
+      </mat-card-title>
+    <mat-horizontal-stepper #stepper>
+        <mat-step stepControl="primerio">
+            <form class="firstFormGroup">
+                <ng-template matStepLabel>Dados do Cliente</ng-template>
+                <mat-form-field>
+                    <mat-label>Nome</mat-label>
+                    <input matInput placeholder="Nome completo" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="CPF" name="cpf" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="RG" name="rg" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Celular" name="Celular" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="E-mail" name="email" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Proximo</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step stepControl="segundo">
+            <form class="firstFormGroup">
+                <ng-template matStepLabel>Endereço</ng-template>
+                <mat-form-field>
+                    <mat-label>Rua</mat-label>
+                    <input matInput placeholder="Rua e numero" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Bairro" name="bairro" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Cep" name="cep" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperPrevious>Volta</button>
+                    <button mat-button matStepperNext>Proximo</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step stepControl="tercerio">
+            <form>
+                <ng-template matStepLabel>Forma de pagamento</ng-template>
+                <mat-radio-group class="radio">
+                    <mat-radio-button value="1" class="radio1">Débito</mat-radio-button>
+                    <mat-radio-button value="2" class="radio2">Credito</mat-radio-button>
+                    <mat-radio-button value="3" class="radio3">Dinhiero</mat-radio-button>
+                </mat-radio-group>
+                <div>
+                    <button mat-button matStepperPrevious>Volta</button>
+                    <button mat-button matStepperNext>Proximo</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Finalizar</ng-template>
+            <p>Confirma os dados de cliente e finaliza!</p>
+            <div>
+                <button mat-button matStepperPrevious>Volta</button>
+                <button mat-stroked-button color="primary" (click)="finalizarCompra()">Finalizar</button>
+            </div>
+        </mat-step>
+    </mat-horizontal-stepper>
+</mat-card>

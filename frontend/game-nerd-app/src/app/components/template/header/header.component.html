@@ -1,0 +1,45 @@
+<mat-toolbar class="header mat-elevation-z4">
+    <span>
+        <a>
+            <img class="logo" src="assets/game.svg" alt="logo">
+        </a>
+    </span>
+    <span class="title-group">
+        <a mat-button routerLink="/">
+            Inicio
+        </a>
+    </span>
+
+    <span class="title-group">
+        <a>
+            <a mat-button [matMenuTriggerFor]="aboveMenu">Categoria</a>
+            <mat-menu #aboveMenu="matMenu" yPosition="above">
+                <button mat-menu-item>Jogo</button>
+                <button mat-menu-item>Video game</button>
+                <button mat-menu-item>Teclado gamer</button>
+                <button mat-menu-item>Fone de ouvido</button>
+                <button mat-menu-item>Notebook</button>
+                <button mat-menu-item>Munhatura</button>
+            </mat-menu>
+        </a>
+    </span>
+    <span class="title-group">
+        <a mat-button (click)="navigateToProductCreate()">
+           Cadastro novo produto
+        </a>
+    </span>
+    <span class="title-group">
+        <a>
+            <a mat-button routerLink="/cadastro" routerLinkActive="selected" >
+                Adicionar nova Usuario</a>
+        </a>
+    </span>
+    <span class="title-group">
+        <a>
+            <i class="material-icons" mat-raised-button matBadge="7" [matBadgeHidden]="hidden"
+                (click)="toggleBadgeVisibility()">
+                notifications
+            </i>
+        </a>
+    </span>
+</mat-toolbar>

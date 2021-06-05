@@ -1,0 +1,30 @@
+<mat-card class="registro-content">
+     <mat-card-title class="title">
+          Formulario de cadastro do novo usuario
+     </mat-card-title>
+     <form>
+          <mat-form-field>
+               <input matInput placeholder="Nome Completo" name="nomeCompleto">
+          </mat-form-field>
+          <mat-form-field>
+               <input matInput placeholder="RG" name="rg">
+          </mat-form-field>
+          <mat-form-field>
+               <input matInput placeholder="CPF" name="cpf">
+          </mat-form-field>
+          <mat-form-field>
+               <input matInput placeholder="Telefoné" name="telefone">
+          </mat-form-field>
+          <mat-form-field>
+               <input matInput type="password" placeholder="Senha" name="senha">
+          </mat-form-field>
+          <mat-form-field>
+               <input matInput type="text" placeholder="E-mail" name="email">
+          </mat-form-field>
+          <mat-form-field>
+               <input matInput placeholder="endereço" name="endereco">
+          </mat-form-field>
+     </form>
+     <button mat-raised-button id="button" color="primary" (click)="createUsuario()">Salvar</button>
+     <button mat-stroked-button color="primary" (click)="VoltarAoInicio()">Cancelar</button>
+</mat-card>

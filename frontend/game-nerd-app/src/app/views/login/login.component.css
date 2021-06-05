@@ -1,0 +1,40 @@
+.login-card{
+    width: 50%;
+    height: 36%;
+    border-radius: 20px;
+    padding-top: 12px;
+    margin-top: 85px;
+    margin-bottom: 199px;
+    margin-left: 23%;
+}
+
+img{
+    padding-bottom: 10px;
+    padding-left: 300px;
+    border-radius: 2px;
+}
+
+
+.title{
+    padding-left: 45%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    display: flex;
+    width: 20%;
+    padding-left: 83%;
+    padding-top: 5px;
+}
+
+a{
+    color: rgb(233, 31, 31);
+}
+
+button{
+    margin: 20px 15px 0px 0px;
+}

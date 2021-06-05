@@ -1,0 +1,21 @@
+<mat-card class="login-card">
+  <img class="logo" src="assets/game.svg" alt="logo" width="200px" height="100px">
+  <mat-card-title class="title">
+    Login
+  </mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput type="text" placeholder="E-mail" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput type="password" placeholder="Senha" required>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button class="button" color="primary" (click)="OnLogon()">Vamos lá</button>
+  <span >
+    <a mat-button routerLink="/">
+      Esqueçeu senha
+    </a>
+  </span>
+</mat-card>
